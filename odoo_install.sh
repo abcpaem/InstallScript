@@ -77,6 +77,7 @@ sudo apt-get install libpq-dev
 #--------------------------------------------------
 # Install PostgreSQL Server
 #--------------------------------------------------
+<<DisablePostgress
 echo -e "\n---- Install PostgreSQL Server ----"
 if [ $INSTALL_POSTGRESQL_FOURTEEN = "True" ]; then
     echo -e "\n---- Installing postgreSQL V14 due to the user it's choise ----"
@@ -89,9 +90,9 @@ else
     sudo apt-get install postgresql postgresql-server-dev-all -y
 fi
 
-
 echo -e "\n---- Creating the ODOO PostgreSQL User  ----"
 sudo su - postgres -c "createuser -s $OE_USER" 2> /dev/null || true
+DisablePostgress
 
 #--------------------------------------------------
 # Install Dependencies
