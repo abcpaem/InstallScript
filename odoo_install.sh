@@ -77,6 +77,8 @@ sudo apt-get install libpq-dev
 #--------------------------------------------------
 # Install PostgreSQL Server
 #--------------------------------------------------
+echo -e "\n---- Installing postgres client to access RDS from EC2 ----"
+sudo apt-get install postgresql-client
 <<DisablePostgress
 echo -e "\n---- Install PostgreSQL Server ----"
 if [ $INSTALL_POSTGRESQL_FOURTEEN = "True" ]; then
