@@ -56,6 +56,8 @@ ls -l --block-size=M
 ##### Copy all files and directories:
 ```
 cp -a /source_folder/. /destination_folder/
+
+cp -a /odoo/.local/share/Odoo/sessions/. /odoo/.local/share/Odoo/filestore/efs/sessions
 ```
 ##### Find file:
 ```
