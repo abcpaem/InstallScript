@@ -86,7 +86,7 @@ sudo systemctl list-units --state running
 ```
 sudo service odoo-server start
 
-sudo service odoo-server stopt
+sudo service odoo-server stop
 
 sudo service odoo-server restart
 ```
