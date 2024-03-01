@@ -410,6 +410,7 @@ else
   fi
 fi
 
+sudo apt-get install -y --fix-missing nfs-common postgresql-client awscli
 echo -e "* Starting Odoo Service"
 sudo su root -c "/etc/init.d/$OE_CONFIG start"
 echo "-----------------------------------------------------------"
