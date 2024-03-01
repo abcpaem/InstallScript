@@ -16,11 +16,7 @@ psql --version
 ```
 ##### Connect to RDS:
 ```
-psql \
-   --host=odoo-db.xxxxxxxxxxxx.us-east-1.rds.amazonaws.com \
-   --port=5432 \
-   --username=postgres \
-   --password
+psql --host=odoo.xxxxxxxxxxxx.us-east-1.rds.amazonaws.com --port=5432 -U master -d postgres --password
 ```
 ##### Create Odoo user:
 ```
