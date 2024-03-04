@@ -40,6 +40,8 @@ df -T
 ##### View Odoo logs:
 ```
 tail -100 /var/log/odoo/odoo-server.log
+
+tail -f /var/log/odoo/odoo-server.log
 ```
 ##### Delete all files not named "a" and excluding current directory:
 ```
