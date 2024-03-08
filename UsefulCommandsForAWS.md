@@ -26,6 +26,14 @@ CREATE USER odoo WITH PASSWORD 'odoo' CREATEDB;
 ```
 \du
 ```
+##### List Databases:
+```
+\l
+```
+##### Drop DB:
+```
+drop database <db_name> with (force);
+```
 
 ## EFS and Files
 
