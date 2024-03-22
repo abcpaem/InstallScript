@@ -1,6 +1,14 @@
-# Useful Commands for AWS
+# Useful Commands for AWS and Odoo
 
 The following list of commands are quite useful when installing or troubleshooting Odoo in AWS using RDS, EC2, ALB and EFS.
+
+## Odoo
+
+##### To view Odoo in Debug mode, add the following in the URL:
+
+```
+?debug=1
+```
 
 ## RDS Database
 
